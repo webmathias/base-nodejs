@@ -1,0 +1,11 @@
+version: '2.1'
+
+services:
+  nodetests:
+    build: .
+    environment:
+      NODE_ENV: development
+    volumes: 
+      - ./:/app 
+    entrypoint: npm test
+    tty: true
