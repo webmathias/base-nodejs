@@ -7,5 +7,5 @@ services:
       NODE_ENV: development
     volumes: 
       - ./:/app 
-    entrypoint: npm test
+    entrypoint: npm run test-in-docker
     tty: true

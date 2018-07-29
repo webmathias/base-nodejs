@@ -4,10 +4,12 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "test": "../node_modules/.bin/mocha --watch tests/*"
+    "test": "docker-compose -f docker-compose.test.yml up",
+    "test-in-docker":"../node_modules/.bin/mocha --watch tests/*" 
   },
   "devDependencies": {
     "eslint": "^5.1.0",
-    "mocha": "^5.2.0"
+    "mocha": "^5.2.0",
+    "docker-compose": "^0.8.1"
   }
 }
